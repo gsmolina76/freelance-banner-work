@@ -1,0 +1,315 @@
+body {
+  margin: 0; }
+
+#bg-exit {
+  position: relative;
+  width: 726px;
+  height: 88px;
+  border: #000 1px solid;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  overflow: hidden;
+  /* initialize all frames as hidden */ }
+  #bg-exit .frame, #bg-exit .bg {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    -webkit-transform-origin: 50% 42.5%;
+    -ms-transform-origin: 50% 42.5%;
+    transform-origin: 50% 42.5%; }
+  #bg-exit .frame {
+    opacity: 0;
+    z-index: 1; }
+  #bg-exit #topbg {
+    position: absolute;
+    opacity: 1;
+    background-color: #FFF;
+    height: 90px;
+    width: 848px; }
+  #bg-exit #tophalf {
+    z-index: 2; }
+  #bg-exit .bg {
+    z-index: 0; }
+  #bg-exit .dot {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    background-color: #ccd642;
+    border-radius: 50%;
+    opacity: 0;
+    z-index: 2; }
+  #bg-exit #indication {
+    opacity: 1;
+    z-index: 3; }
+  #bg-exit #f1 {
+    position: absolute;
+    top: 5px;
+    left: 230px; }
+  #bg-exit #f2 {
+    position: absolute;
+    top: 20px;
+    left: 230px; }
+  #bg-exit #f3 {
+    position: absolute;
+    top: 20px;
+    left: 230px; }
+  #bg-exit #f4 {
+    position: absolute;
+    width: 190px;
+    top: 25px;
+    left: 230px; }
+  #bg-exit #f5 {
+    position: absolute;
+    left: 260px;
+    top: 2px; }
+  #bg-exit #f51 {
+    position: absolute;
+    left: 230px;
+    top: 5px; }
+  #bg-exit #pi {
+    position: absolute;
+    height: 10px;
+    width: 150px;
+    top: 72px;
+    left: 245px;
+    z-index: 3; }
+  #bg-exit #oncall {
+    left: 260px;
+    top: 0px; }
+  #bg-exit #default {
+    display: none; }
+  #bg-exit #learn_more {
+    background-image: url("learn_bt.png");
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: content-box;
+    border: solid white 0px;
+    position: absolute;
+    overflow: hidden;
+    top: 53px;
+    left: 2px;
+    z-index: 3;
+    width: 122px;
+    height: 33px;
+    opacity: 0; }
+  #bg-exit #overlay-clip {
+    position: absolute;
+    overflow: hidden;
+    top: 2px;
+    left: 2px;
+    width: 120px;
+    height: 28px;
+    z-index: 3; }
+  #bg-exit #overlay-end {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    border-top: 125px solid transparent;
+    border-left: 125px solid white;
+    border-bottom: 125px solid transparent;
+    top: -110px;
+    left: -105px;
+    z-index: 4;
+    opacity: 0.25; }
+  #bg-exit #isi-duplicate {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 90px;
+    width: calc(34.5%);
+    z-index: 5;
+    background-color: #fff; }
+    #bg-exit #isi-duplicate #isi-duplicate-header {
+      border: none;
+      height: 17px; }
+      #bg-exit #isi-duplicate #isi-duplicate-header a {
+        cursor: pointer;
+        font-family: "Open Sans", Arial, Sans-Serif;
+        font-weight: 800;
+        position: absolute;
+        top: 1px;
+        left: 3px;
+        color: #01aba7;
+        font-size: 10px;
+        letter-spacing: -0.7px; }
+      #bg-exit #isi-duplicate #isi-duplicate-header #isi-duplicate-expand {
+        position: absolute;
+        top: 4px;
+        right: 0px;
+        width: 11px;
+        display: block;
+        float: right;
+        opacity: 1;
+        border: #E5E5E5 1px solid; }
+    #bg-exit #isi-duplicate #duplicate-legal {
+      font-family: Arial,sans-serif;
+      position: absolute;
+      bottom: 0px;
+      right: 0;
+      width: 99%;
+      height: 73px;
+      color: #000;
+      overflow-x: hidden;
+      overflow-y: auto;
+      cursor: default;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0px; }
+      #bg-exit #isi-duplicate #duplicate-legal > :first-child li {
+        padding: 5px 0 0 0;
+        margin: 0px 0px 9px 5px; }
+      #bg-exit #isi-duplicate #duplicate-legal p {
+        margin: 0 10px 0 1px; }
+      #bg-exit #isi-duplicate #duplicate-legal p.standalone {
+        margin-top: 10px; }
+      #bg-exit #isi-duplicate #duplicate-legal p.standalone-end {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      #bg-exit #isi-duplicate #duplicate-legal h5 {
+        color: #18a89e;
+        font-size: 12px;
+        margin: 3px 0 0 1px;
+        font-weight: bold; }
+        #bg-exit #isi-duplicate #duplicate-legal h5 a {
+          cursor: pointer;
+          color: #01aba7;
+          text-decoration: underline; }
+      #bg-exit #isi-duplicate #duplicate-legal ul {
+        padding-left: 10px;
+        margin: 0 14px 10px 1px;
+        list-style: none; }
+      #bg-exit #isi-duplicate #duplicate-legal li {
+        padding: 0 0 5px 8px;
+        text-indent: -8px;
+        margin: 5px 0 15px 0; }
+        #bg-exit #isi-duplicate #duplicate-legal li:before {
+          content: '\2022';
+          font-size: 14px;
+          vertical-align: -1px;
+          padding-right: 4px; }
+      #bg-exit #isi-duplicate #duplicate-legal ul:not(:first-of-type) li {
+        padding-bottom: 10px; }
+      #bg-exit #isi-duplicate #duplicate-legal ul.columns {
+        -moz-column-count: 2;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        column-count: 2;
+        column-gap: 10px; }
+        #bg-exit #isi-duplicate #duplicate-legal ul.columns li {
+          margin: 5px 5px;
+          padding: 5px 0 0 8px;
+          font-size: 13; }
+      #bg-exit #isi-duplicate #duplicate-legal sup {
+        font-size: 75%;
+        line-height: 0; }
+      #bg-exit #isi-duplicate #duplicate-legal .strong {
+        font-weight: bold; }
+      #bg-exit #isi-duplicate #duplicate-legal a {
+        cursor: pointer;
+        color: #01aba7; }
+  #bg-exit #isi-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    font-size: 12px;
+    background-color: #fff; }
+    #bg-exit #isi-container #isi-header {
+      border: none;
+      height: 17px; }
+      #bg-exit #isi-container #isi-header a {
+        cursor: pointer;
+        font-family: "Open Sans", Arial, Sans-Serif;
+        font-weight: 800;
+        position: absolute;
+        top: 1px;
+        left: 9px;
+        color: #01aba7;
+        font-size: 12px;
+        letter-spacing: -0.9px; }
+      #bg-exit #isi-container #isi-header #isi-expand, #bg-exit #isi-container #isi-header #isi-collapse {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+        width: 11px;
+        display: block;
+        float: right;
+        opacity: 1;
+        border: #E5E5E5 1px solid; }
+    #bg-exit #isi-container #legal {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 99%;
+      height: 72px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      font-family: Arial,sans-serif;
+      color: #000;
+      cursor: default;
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0px; }
+      #bg-exit #isi-container #legal > :first-child li {
+        padding: 0;
+        margin: 3px 0px 0px 5px; }
+      #bg-exit #isi-container #legal p {
+        margin: 0 10px 0 2px; }
+      #bg-exit #isi-container #legal .standalone {
+        margin-top: 10px; }
+      #bg-exit #isi-container #legal .standalone-end {
+        margin-top: 10px;
+        margin-bottom: 10px; }
+      #bg-exit #isi-container #legal h5 {
+        color: #01aba7;
+        font-size: 12px;
+        margin: 3px 0 0 2px;
+        font-weight: bold; }
+        #bg-exit #isi-container #legal h5 a {
+          cursor: pointer;
+          color: #01aba7;
+          text-decoration: underline; }
+      #bg-exit #isi-container #legal ul {
+        padding-left: 10px;
+        margin: 0 14px 10px 2px;
+        list-style: none; }
+        #bg-exit #isi-container #legal ul.columns {
+          -moz-column-count: 2;
+          -moz-column-gap: 10px;
+          -webkit-column-count: 2;
+          -webkit-column-gap: 10px;
+          column-count: 2;
+          column-gap: 10px; }
+          #bg-exit #isi-container #legal ul.columns li {
+            margin: 5px 5px;
+            padding: 5px 0 0 8px;
+            font-size: 13; }
+        #bg-exit #isi-container #legal ul.spacious li:not(:first-of-type) {
+          padding-top: 14px; }
+      #bg-exit #isi-container #legal li {
+        padding: 0 0 0 8px;
+        text-indent: -8px;
+        margin: 5px 0 10px 5; }
+        #bg-exit #isi-container #legal li:before {
+          content: '\2022';
+          font-size: 14px;
+          vertical-align: -1px;
+          padding-right: 4px; }
+      #bg-exit #isi-container #legal sup {
+        font-size: 75%;
+        line-height: 0; }
+      #bg-exit #isi-container #legal .strong {
+        font-weight: bold; }
+      #bg-exit #isi-container #legal a {
+        cursor: pointer;
+        color: #4192D2; }
+
+/*# sourceMappingURL=style.css.map */

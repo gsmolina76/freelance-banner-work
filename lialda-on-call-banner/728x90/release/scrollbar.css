@@ -1,0 +1,57 @@
+/*Custom scrollbars */
+
+#legal::-webkit-scrollbar {
+  width:12px;
+  cursor:auto;
+} 
+
+#legal::-webkit-scrollbar-track {
+	/*box-shadow: 3px 3px 10px rgba(0,0,0,.25) inset;*/
+	border-left:#e5e5e5 1px solid;
+	border-right:#e5e5e5 1px solid;
+}
+
+#legal::-webkit-scrollbar-button:increment{
+	/* If using CSS Sprite for bar image */
+	background-position: -1px -10px;
+	background-image: url("scroll-arrows.png");
+	border:#e5e5e5 1px solid;
+  height:12px;
+}
+
+#legal::-webkit-scrollbar-button:decrement{ 
+	/* If using CSS Sprite for bar image */
+	background-position: -1px -0px;
+	background-image: url("scroll-arrows.png");
+	border:#e5e5e5 1px solid;
+	height:12px;
+}
+
+/*Custom scrollbars */
+
+#duplicate-legal::-webkit-scrollbar {
+  width:12px;
+  cursor:auto;
+} 
+
+#duplicate-legal::-webkit-scrollbar-track {
+	/*box-shadow: 3px 3px 10px rgba(0,0,0,.25) inset;*/
+	border-left:#e5e5e5 1px solid;
+	border-right:#e5e5e5 1px solid;
+}
+
+#duplicate-legal::-webkit-scrollbar-button:increment{
+	/* If using CSS Sprite for bar image */
+	background-position: -1px -10px;
+	background-image: url("scroll-arrows.png");
+	border:#e5e5e5 1px solid;
+  height:12px;
+}
+
+#duplicate-legal::-webkit-scrollbar-button:decrement{ 
+	/* If using CSS Sprite for bar image */
+	background-position: -1px -0px;
+	background-image: url("scroll-arrows.png");
+	border:#e5e5e5 1px solid;
+	height:12px;
+}

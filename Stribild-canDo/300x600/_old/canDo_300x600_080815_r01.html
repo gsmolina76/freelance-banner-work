@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Tag suggested in "DCM HTML5 banner help section.pdf" "Dimension guidelines" -->
+		<meta name="ad.size" content="width=300,height=600">
+		<title>mistc</title>
+		
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css" />
+		
+		<style>
+
+
+		body {
+				margin: 0;
+			}
+
+			li{
+			    list-style: none;
+			    padding:0;
+			    margin:0;
+			}
+			li{ 
+			    padding-left: 1em; 
+			    text-indent: -.7em;
+			}
+			li :before{
+			    content: "• ";
+			    color: #FDD139; 
+			}
+			.listStyle{
+			    list-style: none;
+			    padding:0;
+			    margin:0;
+			}
+
+			.listStyle{ 
+			    padding-left: 1em; 
+			    text-indent: -.7em;
+			}
+			.listStyle :before{
+			    content: "• ";
+			    color: #FDD139; 
+			}
+			
+			@keyframes fadeFine {
+				0%, 100% {
+					opacity: 0;
+  				}
+  				9.09%, 90.91% { /* 1/9/1 */
+  					opacity: 1;
+  				}
+			}
+			@keyframes fadeFoot {
+				0%, 100% {
+					opacity: 0;
+  				}
+  				11.11%, 88.89% { /* 1/7/1 */
+  					opacity: 1;
+  				}
+			}
+
+
+			@keyframes slideLeft{
+				0%{
+					left:310px;
+				}
+				100%{
+					left:20px;
+				}
+			}
+
+			@keyframes slideRight{
+				0%{
+					left:-300px;
+				}
+				100%{
+					left:20px;
+				}
+			}
+
+			@keyframes bounceUp{
+				0%{
+					top:0px;
+				}
+				95%{
+					top:-95px;
+				}
+				100%{
+					top:-90px;
+				}
+
+			}
+			@keyFrames bounceDown{
+				0{
+					bottom: 0px;
+				}
+				95%{
+					bottom: -205px;
+				}
+				100%{
+					bottom: -200px;
+				}
+			}
+
+			@keyframes spin45 { 
+				0% {
+					left:0px;
+    				transform: rotate(0deg);
+  				}
+  				40%, 100% {
+  					left:-500px;
+    				transform: rotate(90deg);
+  				}
+			}
+			@keyframes spinBack45 { 
+				0% {
+					left:0px;
+    				transform: rotate(0deg);
+  				}
+  				40%, 100% {
+  					left:-500px;
+    				transform: rotate(-90deg);
+  				}
+			}
+			@keyframes spinTwo45 { 
+				0% {
+					left:300px;
+    				transform: rotate(0deg);
+  				}
+  				95%{
+  					left:225px;
+    				transform: rotate(50deg);
+  				}
+  				100% {
+  					left:230px;
+    				transform: rotate(45deg);
+  				}
+			}
+			@keyframes spinTwoBack45 { 
+				0% {
+					left:300px;
+    				transform: rotate(0deg);
+  				}
+  				95%{
+  					left:225px;
+    				transform: rotate(-50deg);
+  				}
+  				100% {
+  					left:230px;
+    				transform: rotate(-45deg);
+  				}
+			}
+
+			@keyFrames pullBack{
+				0{
+					left:230px;
+				}
+				5%{
+					left:225px;
+				}
+				100%{
+					left:300px;
+				}
+
+			}
+
+
+			@keyFrames leftBarOne{
+				0%{
+					top:250px;
+					height:1px;
+				}
+				95%{
+					top:215px;
+					height:70px;
+				}
+				100%{
+					top:220px;
+					height:60px;
+				}
+			}
+			@keyFrames leftBarTwo{
+				0%{
+					top:220px;
+					height:60px;
+				}
+				95%{
+					top:205px;
+					height:155px;
+				}
+				100%{
+					top:210px;
+					height:150px;
+				}
+			}
+
+			@keyframes bounceRight{
+				0%{
+					left:-100px;
+				}
+				95%{
+					left:35px;
+				}
+				100%{
+					left:30px;
+				}
+			}
+
+			@keyframes fadeOne {
+				0%{
+					top: 200px;
+					left: 40px;
+					width: 1%;
+					height: 1%;
+	
+  				}
+  				95%{
+					top: 17px;
+					left: 30px;
+  					width: 85%;
+					height: 90%;
+
+
+  				}
+  				100%{ 
+  					top: 21px;
+					left: 36px;
+  					width: 80%;
+					height: 85%;
+				}
+  					
+  			}
+			@keyframes appearTwo {
+				0%{
+  					opacity: 0;
+  				}
+  				100%{
+  					opacity: 1;
+  				}
+
+			}
+
+  			@keyframes fadeTwo {
+  				0%{
+					top: 200px;
+					left: 80px;
+					width: 1%;
+					height: 1%;
+  				}
+  				90%{ 
+  					top: 17px;
+	  				left: 30px;
+	  				width: 90%;
+					height: 85%;
+  					
+  				}
+  				100%{ 
+  					top: 21px;
+	  				left: 40px;
+	  				width: 80%;
+					height: 80%;
+  					
+  				}
+  			}
+
+  			@keyframes fadeThree{
+  				0%{
+  					top: 10px;
+					left: -100px;
+					width: 300%;
+					height: 250%;
+				}
+
+				100%{
+					top: 40px;
+					left: 17px;
+					width: 270px;
+					height: 84px;
+				}
+  			}
+
+  			@keyframes threeTop{
+  				0%{
+					top: 40px;
+					left: 17px;
+					width: 270px;
+					height: 84px;
+  				}
+  				100%{
+  					top: 20px;
+					left: 70px;
+					width: 160px;
+					height: 50px;
+  				}
+  			}
+
+  			@keyframes moveLeftOne {
+				0% { 
+					top: 21px;
+					left: 36px;
+  					width: 80%;
+					height: 80%;
+				}
+  				100% { 
+  					top: 120px;
+  					left: 20px;
+  					width: 30%;
+					height: 30%;
+  				}
+			}
+			@keyframes fourUp{
+				0%{
+					bottom:-100px;
+				}
+				100%{
+					bottom:20px;
+				}
+
+			}
+  			@keyframes fadeIn{
+  				0%{
+  					opacity: 0
+  				}
+  				100%{
+  					opacity:1;
+  				}
+
+  			}
+  			@keyframes fadeOut{
+				0%{
+  					opacity: 1
+  				}
+  				100%{
+  					opacity:0;
+  				}
+			}
+
+			@keyframes slideOutBG{
+				0%{
+					width:0px;
+				}
+				100%{
+					width:250px;
+				}
+			}
+
+			@keyframes moveOverThree{
+				0%{
+
+					top: 20px;
+					left: 70px;
+					width: 160px;
+					height: 50px;
+  				}
+					
+				100%{
+					top: 10px;
+					left: 10px;
+					width: 160px;
+					height: 50px;
+  				}
+
+			}
+			@keyframes moveThreeBack{
+				0%{
+					top: 10px;
+					left: 10px;
+					width: 160px;
+					height: 50px;
+  				}
+				100%{
+
+					top: 20px;
+					left: 70px;
+					width: 160px;
+					height: 50px;
+  				}
+
+			}
+			@keyframes moveOverSix{
+				0%{
+					left:350px;
+				}
+				100%{
+					left:0px;
+				}
+			}
+
+			@keyframes moveSixBack{
+				0%{
+					left:0px;
+				}
+					
+				100%{
+					left:350px;
+				}
+			}
+
+  			#anim1{
+  				background-image: url('1_bg.jpg');
+  				opacity:1;
+  				height:600px;
+				animation: fadeOut 1s forwards 5s 1;
+			}
+
+			#anim2{
+				position: absolute;
+				overflow: hidden;
+				background-image: url('2_600_bg.jpg');
+				opacity: 0;
+				height:600px;
+				width:300px;
+				top:0;
+				animation: fadeIn 1s forwards 5s 1;
+			}
+
+			#anim3{
+				filter:alpha(opacity=30);
+				opacity: 0;
+			}
+			#oneTop{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				top:0px;
+				width:300px;
+				height: 260px;
+				animation: bounceUp .3s forwards 3.5s 1, spinBack45 .3s forwards 4.5s 1;
+			}
+			#oneBottom{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				bottom: 0px;
+				width:300px;
+				height: 340px;
+				animation: bounceDown .3s forwards 3.5s 1, spin45 .3s forwards 4.5s 1;
+			}
+
+			#twoTop{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				top:-65px;
+				left:300px;
+				width:100px;
+				height: 200px;
+				background-color:#686868;
+				animation: spinTwoBack45 .3s forwards 11s 1;
+			}
+			#twoBottom{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				left:300px;
+				bottom: -65px;
+				width:100px;
+				height: 200px;
+				background-color:#F6BE00;
+				animation: spinTwo45 .3s forwards 11s 1;
+			}
+
+			#one {
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				height:250px;
+				width:300px;
+				background-color:#686868;
+				
+
+			}
+			#two {
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				top: 250px;
+				left: 0px;
+				width: 300px;
+				height: 10px;
+				background-color:#363636;
+				opacity:1;
+				
+
+			}
+			#three{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				bottom: 0px;
+				left: 0px;
+				width: 300px;
+				height: 340px;
+				background-color:#F6BE00;
+				opacity:1;
+
+			}
+
+			#leaveText{
+				position: absolute;
+				overflow: hidden;
+				top:200px;
+				left:15px;
+				font-family: Helvetica, Arial, sans-serif;
+				color:#363636;
+				text-align: center;
+				font-size: 39px;
+				line-height: 1;
+				animation:fadeOut .3s forwards 4.5s 1;
+			}
+			#logo{
+				position: absolute;
+				left:55px;
+				top:40px;
+			}
+
+			#leftBar{
+				position:absolute;
+				left:20px;
+				width:5px;
+				top:250px;
+				height:1px;
+				background-color:#F6BE00;
+				animation: leftBarOne .5s forwards 5.5s 1, leftBarTwo .5s forwards 8s 1, fadeOut .5s forwards 10.5s 1;
+
+			}
+
+			#four{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				bottom:-100px;
+				animation: fourUp 1s forwards 5s 1;
+
+			}
+
+			#five{
+				position: absolute;
+				overflow: hidden;
+				opacity:0;
+				top: 95px;
+				left:15px;
+				animation: fadeIn 1s forwards 14s 1;
+			}
+
+			#sixwrp{
+				position: absolute;
+				overflow: hidden;
+				top: 110px;
+				left:350px;
+				background-color: #F6BE00;
+				border-top: gray 5px solid;
+				border-bottom: gray 5px solid;
+				width:300px;
+				height:30px;
+			}
+
+			#six {
+				position: relative;
+				overflow: hidden;
+				top: -7px;
+				left:40px;
+				width:300px;
+				height:100%;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 16px;
+				line-height: 16px;
+				
+			}
+
+			#six a{
+				
+				color: #000;
+				text-decoration: none;
+			}
+
+			#six a:hover {
+				text-decoration: underline;
+			}
+			#arrow{
+				position: relative;
+				overflow: hidden;
+				top: 1px;
+				left:1px;
+			}
+
+			#arrow > a:hover{
+				left:3px;
+			}
+
+			#text1 {
+				position:absolute;
+				top: 180px;
+				left: -300px;
+				font-family: Helvetica, Arial, sans-serif;
+				color:#FFF;
+				text-align: left;
+				font-size: 32px;
+				opacity:1;
+				animation: slideRight .5s forwards 1s 1, fadeOut .5s forwards 2.5s 1;
+
+
+			}
+			#txtwrp{
+				position:absolute;
+				overflow: hidden;
+				bottom: 230px;
+				left: 310px;
+				animation: slideLeft .5s forwards 1s 1, fadeOut .5s forwards 2.5s 1;
+			}
+
+			#text2 {
+				position:relative;
+				width:250px;
+				color:#FFF;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				line-height: 32px;
+				font-size: 32px;
+				opacity:1;
+				
+
+
+			}
+
+
+			#text3_1 {
+				position:absolute;
+				top: 200px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 26px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 6.1s 1, bounceRight .5s forwards 6.1s 1, fadeOut .5s forwards 7.5s 1;
+
+
+			}
+			#text3_2 {
+				position:absolute;
+				top: 225px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 26px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 6.3s 1, bounceRight .5s forwards 6.3s 1, fadeOut .5s forwards 7.5s 1;
+
+			}
+			#text4_1 {
+				position:absolute;
+				top: 190px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 26px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 8.1s 1, bounceRight .5s forwards 8.1s 1, fadeOut .5s forwards 10.5s 1;
+
+
+			}
+			#text4_2 {
+				position:absolute;
+				top: 220px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 26px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 8.2s 1, bounceRight .5s forwards 8.2s 1, fadeOut .5s forwards 10.5s 1;
+
+			}
+			#text4_3 {
+				position:absolute;
+				top: 250px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 26px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 8.3s 1, bounceRight .5s forwards 8.3s 1, fadeOut .5s forwards 10.5s 1;
+
+			}
+			#text4_4 {
+				position:absolute;
+				top: 290px;
+				left: -100px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 18px;
+				line-height: 1;
+				opacity:0;
+				animation: fadeIn .5s forwards 8.4s 1, bounceRight .5s forwards 8.4s 1, fadeOut .5s forwards 10.5s 1;
+
+			}
+
+
+			#text5 {
+				position: absolute;
+				overflow: hidden;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 24px;
+				line-height: 1.1;
+				opacity:0;
+				top: 200px;
+				left:15px;
+				animation: fadeIn .5s forwards 11s 1;
+			}
+
+
+			#text5_2 a{
+				
+				color: #000;
+				text-decoration: none;
+			}
+
+			#text5_2 a:hover {
+				text-decoration: underline;
+			}
+
+
+			#arrow2{
+				position: absolute;
+				overflow: hidden;
+				opacity:1;
+				top: 35px;
+				right: 10px;
+			}
+
+			span{
+				font-size: 20px;
+				line-height: .8;
+			}
+
+			#text5_2{
+				position: absolute;
+				overflow: hidden;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 20px;
+				line-height: 1;
+				width:275px;
+				opacity:0;
+				top: 200px;
+				left:10px;
+			}
+
+
+			
+
+			#subText1_1{
+				position:absolute;
+				top: 140px;
+				left: 10px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 14px;
+				line-height: 1.3;
+				opacity:0;
+				/*animation: fadeIn .5s forwards 6.5s 1, fadeOut .5s forwards 8s 1;*/
+			}
+			#subText2_1{
+				position:absolute;
+				top: 120px;
+				left: 10px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 14px;
+				line-height: 1.3;
+				opacity:0;
+				/*animation: fadeIn .5s forwards 8.5s 1, fadeOut .5s forwards 9.5s 1;*/
+				
+			}
+			#subText2_2{
+				position:absolute;
+				top: 120px;
+				left: 10px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 13px;
+				line-height: 1.3;
+				opacity:0;
+				/*animation: fadeIn .5s forwards 10s 1, fadeOut .5s forwards 11.5s 1;*/
+				
+			}
+			#subText2_3{
+				position:absolute;
+				top: 120px;
+				left: 10px;
+				font-family: Helvetica, Arial, sans-serif;
+				text-align: left;
+				font-size: 13px;
+				line-height: 1.3;
+				opacity:0;
+				/*animation: fadeIn .5s forwards 12s 1, fadeOut .5s forwards 13.5s 1;*/
+				
+			}
+
+			#safeRight{
+				position:absolute;
+				top:-5px;
+				right:-1px;
+			}
+
+			#safeLeft{
+				position:absolute;
+				top:-5px;
+				left:5px;
+			}
+			
+			/*#bg-exit > #one, #bg-exit > #two-zero, #bg-exit > #two-two, 
+				#bg-exit > #two-two, #bg-exit > #two-four, #bg-exit > #two-five, #bg-exit > #two, 
+				#bg-exit > #two-six, #bg-exit > #three-one, #bg-exit > #three, #bg-exit > #four,
+				#bg-exit > #four-one, #bg-exit > #four-two, #bg-exit > #four-three, #bg-exit > #four-four,
+				#bg-exit > #five, #bg-exit > #fine, #bg-exit > #four-five {
+				cursor: pointer;
+			}*/
+
+			#clicker { 
+				display:block; 
+				width:300px; 
+				height:250px; 
+				position:absolute; 
+				top:350px; 
+				left:0px; 
+				z-index: 1000;
+			
+			}
+			/*Custom scrollbars */
+			#foot > #legal::-webkit-scrollbar 
+			{
+				width:12px;
+				
+			} 
+			
+			#foot > #legal::-webkit-scrollbar-track 
+			{
+				/*box-shadow: 3px 3px 10px rgba(0,0,0,.25) inset;*/
+				border-left: 2px solid #c7c5c7;
+				border-right: 2px solid #c7c5c7;
+				background-color: #f7f9fb;
+			}
+			
+			#foot > #legal::-webkit-scrollbar-thumb 
+			{
+				background-image: url("scrollthumb.png");
+				background-repeat: no-repeat;
+				height: 25px;
+			}
+			
+			#foot > #legal::-webkit-scrollbar-button
+			{
+				width: 15px;
+				height: 13px;
+				background-repeat: no-repeat;
+			} 
+			
+			#foot > #legal::-webkit-scrollbar-button:decrement
+			{
+				background-image: url("up-arrow.jpg");
+			}
+			
+			#foot > #legal::-webkit-scrollbar-button:increment
+			{
+				background-image: url("down-arrow.jpg");
+			}
+			
+			
+			
+			/*End custom scrollbars */
+			
+			
+			#fine {
+
+				
+				font-size: 8px;
+				line-height: 10px;
+				width: 270px;
+				height: 85px;
+				padding: 92px 14px 0 14px;
+			}
+			
+
+			#foot > #pi{
+				border-top: solid 1px;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 284px;
+				height: 15px;
+				padding: 0 7px 0 7px;
+				opacity: 1;
+
+			}
+
+			#foot {
+				
+				opacity:0;
+				position: absolute;
+				left: 0;
+				top: auto;
+				bottom: 0;
+				width: 298px;
+				height: 450px;
+				background-color: #f6f6f6;
+			}
+			#foot > a {
+				padding: 0 7px 0 7px;
+				font-size: 13px;
+				color: #4f91cd;
+				letter-spacing: 0.5px;
+				text-decoration: none;
+			}
+			#foot > a:hover {
+				text-decoration: underline;
+			}
+			#foot > #legal {
+				position: absolute;
+				left: 0;
+				bottom: 15px;
+				width: 284px;
+				height: 410px;
+				padding: 0 7px 0 7px;
+				color: #333;
+				background-color: #fff;
+				overflow-y: scroll;
+				overflow-x: hidden;
+
+			}
+			
+			#pi {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 284px;
+				height: 15px;
+				padding: 0 7px 0 7px;
+				opacity: 0;
+				animation: fadeIn 1s forwards 5s 1;
+				
+			}
+			
+			
+			#foot > #legal h1 {
+				font-size: 18px;
+				line-height: 12px;
+				color: #000000;
+				margin: 0 0 10px 0;
+			}
+			#foot > #legal h2 {
+				font-size: 16px;
+				color: #000000;
+				margin: 3px 0 -7px 0;
+			}
+			#foot > #legal p {
+				
+			}
+			#foot > #legal b {
+				color: #000;
+			}
+			#foot > #legal ul {
+				padding-left: 20px;
+				margin-top: -5px;
+			}
+			#foot > #legal h2 + ul {
+				margin-top: 12px;
+			}
+			#foot > #legal a {
+				color: #4f91cd;
+				text-decoration: underline;
+
+			}
+
+			
+			
+			#foot > #safety {
+				height: 20px;
+				border-top: solid 2px;
+				border-bottom: solid 2px;
+				background-color: #FDD139;
+				clear: both;
+				
+			}
+			
+			#foot > #safety a{
+				font-family: Helvetica, Arial, sans-serif;
+				color: #000;
+				text-decoration: none;
+				/*padding: 0 0 0 7px;*/
+				font-size: 12px;
+				
+			}
+			
+			#pi a{
+				
+				color: #000;
+				text-decoration: underline;
+				font-size: 10px;
+				
+			}
+			#bg-exit {
+				position: relative;
+				overflow: hidden;
+				width: 298px;
+				height: 598px;
+				/*background: #f6f6f6;*/
+
+				border: 1px solid #000;
+				font-family: Helvetica, Arial, sans-serif;
+				font-size: 12px;
+				line-height: 15px;
+				text-align: left;
+			}
+
+
+
+			
+		</style>
+		
+		<script src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+		<script type="text/javascript">
+		(function (window) {
+			    var requestAnimFrame = (function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||function(callback){window.setTimeout(callback,1000/18);};})();
+				
+				var linearTween = function (t, b, c, d) {
+					return c*t/d + b;
+				};
+				
+			    
+			
+			    var animatedScrollTo = function (element, to, duration, callback) {
+			        var start = element.scrollTop,
+			        change = to - start,
+			        animationStart = +new Date();
+			        var animating = true;
+			        var lastpos = null;
+			
+			        var animateScroll = function() {
+			            if (!animating) {
+			                return;
+			            }
+			            requestAnimFrame(animateScroll);
+			            var now = +new Date();
+			            var val = Math.floor(linearTween(now - animationStart, start, change, duration));
+			            if (lastpos) {
+			                if (lastpos === element.scrollTop) {
+			                    lastpos = val;
+			                    element.scrollTop = val;
+			                } else {
+			                    animating = false;
+			                }
+			            } else {
+			                lastpos = val;
+			                element.scrollTop = val;
+			            }
+			            if (now > animationStart + duration) {
+			                element.scrollTop = to;
+			                animating = false;
+			                if (callback) { callback(); }
+			            }
+			        };
+			        requestAnimFrame(animateScroll);
+			    };
+			
+			    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+			        module.exports = animatedScrollTo;
+			    } else {
+			        window.animatedScrollTo = animatedScrollTo;
+			    }
+			})(window);
+			
+			function openScroll(){
+			document.getElementById("foot").style.opacity = 1;
+			
+			document.getElementById("clicker").style.zIndex = -1;
+			document.getElementById("foot").style.zIndex = 1000;
+			document.getElementById("three").style.animation = "moveOverThree 1s forwards 0s";
+			document.getElementById("sixwrp").style.animation = "moveOverSix 1s forwards 0s";
+			document.getElementById("text5").style.animation = "fadeOut .5s forwards 0s 1";
+			document.getElementById("text5_2").style.animation = "fadeIn .5s forwards 0s 1";
+			document.getElementById("arrow2").style.animation = "fadeIn .5s forwards 0s 1";
+			document.getElementById("twoTop").style.animation = "pullBack .5s forwards 0s 1";
+			document.getElementById("twoBottom").style.animation = "pullBack .5s forwards 0s 1";
+			
+		}
+		
+		function closeScroll(){
+			
+			document.getElementById("foot").style.opacity = 0;
+			document.getElementById("foot").style.zIndex = -1;
+			document.getElementById("clicker").style.zIndex = 1000;
+			document.getElementById("three").style.animation = "moveThreeBack 1s forwards 0s";
+			document.getElementById("sixwrp").style.animation = "moveSixBack 1s forwards 0s";
+			document.getElementById("twoTop").style.animation = "spinTwoBack45 .5s forwards 0s 1";
+			document.getElementById("twoBottom").style.animation = "spinTwo45 .5s forwards 0s 1";
+			
+		}
+		
+		</script>
+
+		
+	</head>
+	
+	<body>
+		<div id="bg-exit"> 
+			<div id="anim1">
+				<div id="leaveText"><p><strong>DISCOVER AN<br>OPTION FOR<br>ADULTS THAT</strong></p></div>
+				<div id="oneTop">
+					<div id="one"></div>
+					<div id="two"></div>
+					<div id = "text1">
+							<p><b>NEW TO</b></p>
+					</div>
+				</div>
+					<div id="oneBottom">
+						<div id="three"></div>
+						<div id="txtwrp">
+							<div id = "text2">
+									<p><b>HIV-1<br>TREATMENT?</b></p>
+							</div>
+						</div>
+					</div>
+				</div> 
+			<div id="anim2">
+				<img id="logo" src="2_1.png" alt=""/>
+				<div id="leftBar"></div>
+				
+				<!--<div id="textBG1"></div>-->
+				<div id= "text3_1">
+					<p><strong>Has 3 years of</strong></p>
+				</div>
+				<div id= "text3_2">
+					<p><strong>proven results</strong></p>
+				</div>
+				<!--<div id="textBG2"></div>-->
+				<div id ="text4_1"><p><strong>Is a complete,</strong></p></div>
+				<div id ="text4_2"><p><strong>1-pill-a-day HIV-1</strong></p></div>
+				<div id ="text4_3"><p><strong>treatment</strong></p></div>
+				<div id="text4_4"><p>STRIBILD does not cure HIV-1<br>or AIDS</p></div>
+				<div id="text5"><p><strong>Ask your healthcare<br>provider if STRIBILD<br>is right for you</strong></p></div>
+				<div id="twoTop"></div>
+				<div id="twoBottom"></div>
+				<img id="four" src="2_2_600.png"alt=""/>
+				<a id="clicker" href="#" onclick="openScroll();"></a>
+				</div>
+				<div id="sixwrp">
+				<div id="six"><p><a href="http://www.stribild.com" target="_blank"><strong>FIND OUT ABOUT STRIBILD &gt;</strong></a></div>
+				</div>
+				<div id="text5_2"><a href="http://www.stribild.com" target="_blank"><p><strong>FIND OUT ABOUT<br><span>1-PILL-A-DAY STRIBILD</span></strong></p><img id="arrow2" src="5_1.png" alt=""/></a></div>
+				<p id="fine"></p>
+				<a id="clicker" href="#" onclick="openScroll();"></a>
+
+				<div id="foot">
+					<div id="safety">
+						<p id="safeLeft"><strong>IMPORTANT SAFETY INFORMATION</strong></p>
+						<p id="safeRight"><a href="#" onclick="closeScroll();" ><img src="close.png" /></a></p>
+					</div>
+					<div id="legal">
+
+
+						<h3>What is the most important information I should know about STRIBILD?</h3>
+
+
+						<h3>STRIBILD can cause serious side effects:</h3>
+						
+						<ul>
+							<li><strong>Build-up of an acid in your blood (lactic acidosis),</strong> which is a serious medical emergency. Symptoms of lactic acidosis include feeling very weak or tired, unusual (not normal) muscle pain, trouble breathing, stomach pain with nausea or vomiting, feeling cold especially in your arms and legs, feeling dizzy or lightheaded, and/or a fast or irregular heartbeat</li>
+							<li><strong>Serious liver problems.</strong> The liver may become large (hepatomegaly) and fatty (steatosis). Symptoms of liver problems include your skin or the white part of your eyes turns yellow (jaundice), dark “tea-colored” urine, light-colored bowel movements (stools), loss of appetite for several days or longer, nausea, and/or stomach pain</li>
+							<li><strong>You may be more likely to get lactic acidosis or serious liver problems</strong>problems if you are female, very overweight (obese), or have been taking STRIBILD for a long time. In some cases, these serious conditions have led to death. Call your healthcare provider right away if you have any symptoms of these conditions</li>
+							<li><strong>Worsening of hepatitis B (HBV) infection.</strong> If you also have HBV and stop taking STRIBILD, your hepatitis may suddenly get worse. Do not stop taking STRIBILD without first talking to your healthcare provider, as they will need to monitor your health. STRIBILD is not approved for the treatment of HBV</li>
+							</ul>
+						
+						<h3>Who should not take STRIBILD?</h3>
+
+						<h3>Do not take STRIBILD if you:</h3>
+
+						<ul>
+							<li><strong>Take a medicine that contains:</strong> alfuzosin (Uroxatral®), carbamazepine (Carbatrol®, Epitol®, Equetro®, Tegretol®, Tegretol-XR®, Teril®), cisapride (Propulsid®, Propulsid Quicksolv®), dihydroergotamine (D.H.E. 45®, Migranal®), ergotamine (Cafergot®, Migergot®, Ergostat®, Medihaler Ergotamine®, Wigraine®, Wigrettes®),  lovastatin (Advicor®, Altoprev®, Mevacor®), methylergonovine (Ergotrate®, Methergine®), midazolam (when taken by mouth), phenobarbital (Luminal®), phenytoin (Dilantin®, Phenytek®),  pimozide (Orap®), rifampin (Rifadin®, Rifamate®, Rifater®, Rimactane®), sildenafil when used for lung problems (Revatio®), simvastatin (Simcor®, Vytorin®, Zocor®), triazolam (Halcion®), or the herbal supplement St. John’s wort</li>
+							<li><strong>•	Take any other medicines to treat HIV-1 infection,</strong> or the medicine adefovir (Hepsera®).
+						</ul>
+
+						<h3>What are the other possible side effects of STRIBILD?</h3>
+
+						<h3>Serious side effects of STRIBILD may also include:</h3>
+
+						<ul>
+							<li><strong>New or worse kidney problems, including kidney failure.</strong> Your healthcare provider should do regular blood and urine tests to check your kidneys before and during treatment with STRIBILD. If you develop kidney problems, your healthcare provider may tell you to stop taking STRIBILD</li>
+							<li><strong>Bone problems,</strong> including bone pain or bones getting soft or thin, which may lead to fractures. Your healthcare provider may do tests to check your bones</li>
+							<li><strong>Changes in body fat</strong> can happen in people taking HIV-1 medicines</li>
+							<li><strong>Changes in your immune system.</strong> Your immune system may get stronger and begin to fight infections. Tell your healthcare provider if you have any new symptoms after you start taking STRIBILD</li>
+						</ul>
+
+						<p><strong>The most common side effects</strong> of STRIBILD include nausea and diarrhea. Tell your healthcare provider if you have any side effects that bother you or don’t go away.</p>
+
+						<h3>What should I tell my healthcare provider before taking STRIBILD?</h3>
+
+						<ul>
+							<li><strong>All your health problems.</strong> Be sure to tell your healthcare provider if you have or had any kidney, bone, or liver problems, including hepatitis virus infection</li>
+							<li><strong>All the medicines you take,</strong>including prescription and nonprescription medicines, vitamins, and herbal supplements. STRIBILD may affect the way other medicines work, and other medicines may affect how STRIBILD works. Keep a list of all your medicines and show it to your healthcare provider and pharmacist. Do not start any new medicines while taking STRIBILD without first talking with your healthcare provider</li>
+							<li><strong>If you take hormone-based birth control</strong> (pills, patches, rings, shots, etc)</li>
+							<li><strong>If you take antacids.</strong> Take antacids at least 2 hours before or after you take STRIBILD</li>
+							<li><strong>If you are pregnant </strong> or plan to become pregnant. It is not known if STRIBILD can harm your unborn baby. Tell your healthcare provider if you become pregnant while taking STRIBILD</li>
+							<li><strong>If you are breastfeeding</strong> (nursing) or plan to breastfeed. Do not breastfeed. HIV-1 can be passed to the baby in breast milk. Also, some medicines in STRIBILD can pass into breast milk, and it is not known if this can harm the baby</li>
+
+						</ul>
+
+						<h3><strong>You are encouraged to report negative side effects of prescription drugs to the FDA. Visit <a href="http://www.fda.gov/medwatch" target="_blank" >www.fda.gov/medwatch</a>, or call 1-800-FDA-1088.</strong></h3>
+
+						<h2><strong>What is STRIBILD?</strong></h2>
+
+						<p>STRIBILD® is a prescription medicine that can be used to replace current HIV-1 medicines for some adults who have an undetectable viral load (less than 50 copies/mL of virus in their blood) and whose healthcare provider determines that they meet certain other requirements. STRIBILD combines 4 medicines into 1 pill to be taken once a day with food. STRIBILD is a complete single tablet regimen and should not be used with other HIV-1 medicines.</p>
+
+
+						<p><strong>STRIBILD does not cure HIV-1 infection or AIDS.</strong>. To control HIV-1 infection and decrease HIV-related illnesses you must keep taking STRIBILD. Ask your healthcare provider if you have questions about how to reduce the risk of passing HIV-1 to others. Always practice safer sex and use condoms to lower the chance of sexual contact with body fluids. Never reuse or share needles or other items that have body fluids on them.</p>
+
+
+						<p>STRIBILD, the STRIBILD logo, HEPSERA, and Gilead are trademarks of Gilead Sciences, Inc., or its related companies. All other marks are the property of their respective owners.</p>
+						
+						<p>&#169; 2015 Gilead Sciences, Inc. All rights reserved.</p>
+
+						<p>STBC0205    08/15</p>
+
+						
+
+					</div>
+					<div id="pi">
+						<a href="http://services.gileadhiv.com/stribild/pdf/patient-info" target="_blank"><strong>Patient Information &#9656;</strong></a>	<strong>  |	</strong>
+						<a href="http://services.gileadhiv.com/stribild/pdf/pi" target="_blank"><strong>Full Prescribing Information &#9656;</strong></a>
+					</div>
+					
+					
+				</div> 
+				<div id="pi">
+						<a href="http://services.gileadhiv.com/stribild/pdf/patient-info" target="_blank"><strong>Patient Information &#9656;</strong></a>	<strong>  |	</strong>
+						<a href="http://services.gileadhiv.com/stribild/pdf/pi" target="_blank"><strong>Full Prescribing Information &#9656;</strong></a>
+				</div>
+			</div> 
+			
+
+		</div>
+
+
+		<script>
+		function freshimg(image){
+				if (image.src.indexOf("?") == -1)
+					image.src = image.src + "?v=" + Date();
+				}
+			// add exit functionality...
+			function bgExitHandler() {
+				Enabler.exit('exitOne');
+				
+			}
+
+			// after ad is visible...
+			function adVisibilityHandler() {
+				document.getElementById('fine').addEventListener('click', bgExitHandler, false);
+				
+				// do stuff...
+				
+				setTimeout(function() {
+					openScroll();
+					animatedScrollTo(
+				        document.getElementById('legal'), // element to scroll with
+				        // 1000,
+				        document.getElementById('legal').scrollHeight, // where to scroll to
+				        120000 // duration in ms
+				    );
+			    
+			    }, 18000);
+			    
+			}
+			
+			// after page loaded...
+			function pageLoadedHandler() {
+				if (Enabler.isVisible()) {
+					adVisibilityHandler();
+				}
+				else {
+					Enabler.addEventListener(studio.events.StudioEvent.VISIBLE, adVisibilityHandler);
+				}
+			}
+			
+			// after enabler initialized...
+			function enablerInitHandler() {
+				// polite load...
+			    if (Enabler.isPageLoaded()) {
+					pageLoadedHandler();
+				}
+				else {
+					Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, pageLoadedHandler);
+				}
+			}
+			
+			// wait for enabler initialization...
+			window.onload = function() {
+				if (Enabler.isInitialized()) {
+			    	enablerInitHandler();
+				}
+				else {
+			    	Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+			  }
+			}
+		</script>
+	</body>
+</html>

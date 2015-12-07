@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="Hello World Project" default="info">
+<taskdef resource="net/sf/antcontrib/antlib.xml"/>
+   <target name="release">
+		<echo>Advertiser: ${advertiser} </echo>
+		<echo>Concept: ${concept} </echo>
+		<patternset id="html5.banner.release.folders.pattern">
+			<include name="**/release"/>		
+		</patternset>
+		
+		<foreach param="directory" target="copySize">
+			<path>			
+				<dirset dir="./" casesensitive="yes" id="html5.banner.release.folders">
+					  <patternset refid="html5.banner.release.folders.pattern"/>
+				</dirset>				
+			</path>
+		</foreach>		
+   </target>
+   
+   <target name="copySize">
+		<patternset id="doubleclick.allowed.files">
+			<include name="*.css"/>
+			<include name="*.csv"/>
+			<include name="*.flv"/>
+			<include name="*.gif"/>
+			<include name="*.html"/>
+			<include name="*.ics"/>
+			<include name="*.jpg"/>
+			<include name="*.jpeg"/>
+			<include name="*.js"/>
+			<include name="*.mp3"/>
+			<include name="*.mp4"/>
+			<include name="*.otf"/>
+			<include name="*.pdf"/>
+			<include name="*.png"/>
+			<include name="*.swf"/>
+			<include name="*.txt"/>
+			<include name="*.wav"/>
+			<include name="*.wma"/>
+			<include name="*.xls"/>
+			<include name="*.xml"/>
+		</patternset>
+		<basename property="parent.dir.name" file="${directory}/../"/>
+		<echo>${parent.dir.name}</echo>
+		<copy todir="${digitasFolderPath}\${advertiser}\${concept}\${parent.dir.name}\">
+			<fileset dir="${directory}" casesensitive="no">
+				<patternset refid="doubleclick.allowed.files"/>
+			</fileset>
+		</copy>
+   </target>
+   
+</project>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>15GLAXO069_ADVAIR_160x600_C4</title>
+		<meta name="ad.size" content="width=160,height=600">
+		<style>
+			body{
+				margin:0;
+				padding:0;
+				font-family: Arial, sans-serif;
+				font-weight: bold;
+			}
+			sup, sub{
+			   vertical-align: baseline;
+			   position: relative;
+			   top: -0.4em;
+			}
+			sub{ 
+				top: 0.4em; 
+			}
+
+			#gsk_container_dc {
+				position: relative;
+				float: left;
+				clear: both;
+				top: 0px;
+				left: 0px;
+				margin: auto;
+				width: 160px;
+				height: 600px;
+			}
+
+			#adContainer{
+				position: relative;
+				width: 158px;
+				height: 598px;
+				overflow: hidden;
+				background-color: #594b93;
+				border: 1px solid #808080;
+			}
+			.external-call{
+				color: #ec008c;
+			}
+			.sprite{
+				background: url(sprite.png) no-repeat;
+				display: block;
+			}
+			.hl{
+				color: #efbd32;
+				font-family: Georgia, serif;
+			}
+			#logo{
+				position: absolute;
+				width: 30px;
+				height: 27px;
+				background-position: 0 0;
+				right: -1px;
+				top: -1px;
+				cursor: pointer;
+			}
+			#product-name{
+				position: absolute;
+				left: -1px;
+				top: -60px;
+				width: 160px;
+				height: 59px;
+				background-position: 0 -27px;
+			}
+			#state-graphic{
+				position: absolute;
+				width: 131px;
+				height: 67px;
+				left: 13px;
+				top: 149px;
+				background: url(state.png) no-repeat;
+				opacity: 0;
+				filter:alpha(opacity=0);
+			}
+			#bg-image{
+				position: absolute;
+				width: 236px;
+				height: 413px;
+				left: -39px;
+				top: -3px;
+				background: url(bg.jpg) no-repeat;
+				opacity: 0;
+				filter:alpha(opacity=0);
+			}
+			#f1-copy{
+				position: absolute;
+				text-transform: uppercase;
+				letter-spacing: 0.04em;
+				top: 232px;
+				left: 9px;
+			}
+			#f1-copyA{
+				position: relative;
+				color: #fff;
+				font-size: 13px;
+				line-height: 19px;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: 160px;
+			}
+			#f1-copyB{
+				position: relative;
+				font-family: Georgia, serif;
+				color: #eebb33;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 24px;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: 160px;
+			}
+			#f2-copy{
+				position: absolute;
+				width: 150px;
+				color: #fff;
+				top: 94px;
+				font-size: 13px;
+				line-height: 18px;
+				text-transform: uppercase;
+				left: 171px;
+				opacity: 0;
+				filter:alpha(opacity=0);
+			}
+			#f3-copy{
+				position: absolute;
+				width: 144px;
+				padding: 0 8px;
+				font-size: 11px;
+				line-height: 13px;
+				font-weight: normal;
+				color: #fff;
+				top: 355px;
+				left: 160px;
+			}
+			#f3-copy ul{
+				font-size: 10px;
+				margin-top: 0;
+				padding-left: 13px;
+			}
+			#f3-copy li span{
+				position: relative;
+				left: -5px;
+			}
+			#f4-copy{
+				position: absolute;
+				text-transform: uppercase;
+				text-align: right;
+				right: 12px;
+				top: 229px;
+			}
+			#f4-copyA{
+				position: relative;
+				color: #fff;
+				font-size: 14px;
+				line-height: 20px;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: -160px;
+			}
+			#f4-copyB{
+				position: relative;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				font-size: 20px;
+				line-height: 23px;
+				color: #eebb33;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: -160px;
+			}
+			#f5-copy{
+				position: absolute;
+				text-transform: uppercase;
+				text-align: right;
+				right: 12px;
+				top: 153px;
+			}
+			#f5-copyA{
+				position: relative;
+				font-size: 14px;
+				line-height: 20px;
+				color: #fff;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: -160px;
+			}
+			#f5-copyB{
+				position: relative;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				font-size: 27px;
+				line-height: 29px;
+				color: #eebb33;
+				opacity: 0;
+				filter:alpha(opacity=0);
+				left: -160px;
+			}
+			#isi{
+				position: absolute;
+				height: 250px;
+				width: 160px;
+				left: -1px;
+				bottom: -251px;
+				background-color: #fff;
+			}
+			.isi-prompt{
+				position: relative;
+				font-size: 9px;
+				line-height: 12px;
+				font-weight: normal;
+				text-align: right;
+				height: 12px;
+				padding-right: 5px;
+			}
+			.isi-prompt:before{
+				content: " ";
+				position: absolute;
+				right: -5px;
+				top: 3px;
+				width: 0;
+				height: 0;
+				border-top: 3px solid transparent;
+				border-bottom: 3px solid transparent;
+				border-left: 5px solid #000;
+			}
+			.isi-scroll{
+				width: 137px;
+				height: 197px;
+				padding: 0 10px 0 9px;
+				overflow-y: scroll;
+			}
+			.isi-scroll::-webkit-scrollbar-track{
+				background-image: url("data:image/svg+xml;charset=utf8,<svg%20xmlns%3D\"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg\"%20width%3D\"10px\"%20height%3D\"190px\"%20viewBox%3D\"0%200%2010%20190\"><line%20x1%3D\"5\"%20x2%3D\"5\"%20y1%3D\"0\"%20y2%3D\"190\"%20stroke%3D\"%23cccccc\"%20stroke-width%3D\"1\"%2F><line%20x1%3D\"6\"%20x2%3D\"6\"%20y1%3D\"0\"%20y2%3D\"190\"%20stroke%3D\"%23e6e6e6\"%20stroke-width%3D\"1\"%2F><%2Fsvg>");
+			}
+			.isi-scroll::-webkit-scrollbar{
+				width: 10px;
+			}
+			.isi-scroll::-webkit-scrollbar-thumb{
+				border-radius: 0;
+				background-color: #5c5490;
+				border-top: 2px solid #fff;
+				border-bottom: 2px solid #fff;
+				border-left: 1px solid #fff;
+				border-right: 1px solid #fff;
+			}
+			.isi-scroll::-webkit-scrollbar-button:start:decrement{
+				display: block;
+				height: 10px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-bottom: 8px solid #5c5490;
+			}
+			.isi-scroll::-webkit-scrollbar-button:end:increment{
+				display: block;
+				height: 10px;
+				border-left: 5px solid transparent;
+				border-right: 5px solid transparent;
+				border-top: 8px solid #5c5490;
+			}
+			.isi-header{
+				font-size: 15px;
+				line-height: 13px;
+				margin: 3px 0;
+			}
+			.isi-box{
+				width: 123px;
+				font-size: 12px;
+				border: 1px solid black;
+				padding: 4px 4px 0 4px;
+			}
+			.isi-box p{
+				margin: 0;
+			}
+			.isi-content{
+				font-size: 12px;
+			}
+			.isi-content ul{
+				font-weight: normal;
+			}
+			.isi-scroll ul{
+				margin-top: 0;
+				padding-left: 14px;
+			}
+			.isi-scroll li span{
+				position: relative;
+				left: -8px;
+			}
+			.normal-weight{
+				font-weight: normal;
+			}
+			.cta{
+				position: absolute;
+				text-transform: uppercase;
+				background-color: #594c87;
+				font-weight: normal;
+				color: #fff;
+				left: -1px;
+				width: 160px;
+				height: 25px;
+				cursor: pointer;
+			}
+			.cta:hover{
+				background-color: #8C7FBA;
+			}
+			.cta-inner{
+				position: absolute;
+				top: 8px;
+				font-size: 9px;
+				padding-left: 11px;
+			}
+			.cta-inner:before{
+				content: " ";
+				position: absolute;
+				left: 0;
+				width: 0;
+				height: 0;
+				border-top: 4px solid transparent;
+				border-bottom: 4px solid transparent;
+				border-left: 8px solid #fff;
+			}
+			#cta-info{
+				bottom: -26px;
+			}
+			#cta-info .cta-inner{
+				left: 10px;
+			}
+			#cta-guide{
+				bottom: -26px;
+			}
+			#cta-guide .cta-inner{
+				left: 28px;
+			}
+			#cta-req{
+				width: 130px;
+				font-weight: bold;
+				border: 1px solid #eebb33;
+				letter-spacing: 0.06em;
+				font-size: 11px;
+				height: 22px;
+				text-align: center;
+				left: 173px;
+				line-height: 22px;
+				top: 352px;
+			}
+			#click-area{
+				position: absolute;
+				width: 160px;
+				height: 600px;
+				left: -1px;
+				top: -1px;
+				cursor: pointer;
+			}
+		</style>
+		<script src="TweenMax.min.js" type="text/javascript"></script>
+	</head>
+	<body onLoad="init()">
+		<div id="gsk_container_dc">
+			<div id="adContainer">
+
+				<div id="bg-image"></div>
+				<div id="state-graphic" class="external-call"></div>
+				<div id="f1-copy">
+					<div id="f1-copyA">
+						DO YOUR<br />
+						PATIENTS<br />
+						WITH ASTHMA IN<br />
+						<span class="external-call">[STATE]</span><br />
+						HAVE
+					</div>
+					<div id="f1-copyB">
+						THE<br />
+						FORMULARY<br />
+						ACCESS<br />
+						THEY NEED?
+					</div>
+				</div>
+				<div id="product-name" class="sprite"></div>
+				<div id="f2-copy">
+					COMMERCIAL<br />
+					MANAGED CARE<br />
+					ACCESS<br />
+					<span class="hl">IN</span><br />
+					<span class="external-call">[STATE]</span><span class="hl">,</span><br />
+					<span class="external-call">[XX]</span><span class="hl">%</span><br />
+					OF PATIENT LIVES<br />
+					HAVE FAVORABLE<br />
+					ACCESS* TO ADVAIR<br />
+					VS <span class="external-call">[XX]</span><span class="hl">%</span><br />
+					TO SYMBICORT<sup>&reg;1</sup>
+				</div>
+				<div id="f3-copy">
+					Indications for ADVAIR DISKUS (fluticasone propionate and salmeterol inhalation powder)
+					<ul>
+						<li><span>ADVAIR DISKUS is indicated for the treatment of asthma in patients aged 4 years and older.</span></li>
+						<li><span>Long-acting beta<sub>2</sub>-adrenergic agonists (LABA) such as salmeterol, one of the active ingredients in ADVAIR DISKUS, increase the risk of asthma-related death. Available data from controlled clinical trials</span></li>
+					</ul>
+				</div>
+				<div id="f4-copy">
+					<div id="f4-copyA">
+						EVERY<br />PRESCRIPTION<br />YOU WRITE
+					</div>
+					<div id="f4-copyB">
+						TELLS<br />A STORY
+					</div>
+				</div>
+				<div id="f5-copy">
+					<div id="f5-copyA">
+						WRITE ANOTHER<br />STORY WITH
+					</div>
+					<div id="f5-copyB">
+						ADVAIR<br />TODAY
+					</div>
+				</div>
+				<div id="click-area"></div>
+				<div id="logo" class="sprite"></div>
+				<div id="cta-req" class="cta">
+					REQUEST SAMPLES
+				</div>
+				<div id="isi">
+					<div class="isi-scroll">
+						<div class="isi-prompt">Scroll Here</div>
+						<div class="isi-header">Important Safety Information</div>
+						<div class="isi-box">
+							<p><b>WARNING:<br/>ASTHMA-RELATED</br>DEATH</b></p>
+							<ul>
+								<li><span>Long-acting beta<sub>2</sub>-adrenergic agonists (LABA), such as salmeterol, one of the active ingredients in ADVAIR DISKUS, increase the risk of asthma-related death. Data from a large placebo-controlled US trial that compared the safety of salmeterol with placebo added to usual asthma therapy showed an increase in asthma-related deaths in subjects receiving salmeterol (13 deaths out of 13,176 subjects treated for 28 weeks on salmeterol versus 3 deaths out of 13,179 subjects on placebo). Currently available data are inadequate to determine whether concurrent use of inhaled corticosteroids or other long-term asthma control drugs mitigates the increased risk of asthma-related death from LABA. Available data from controlled clinical trials suggest that LABA increase the risk of asthma-related hospitalization in pediatric and adolescent patients.</span></li>
+								<li><span>Therefore, when treating patients with asthma, physicians should only prescribe ADVAIR DISKUS for patients not adequately controlled on a long-term asthma control medication, such as an inhaled corticosteroid, or whose disease severity clearly warrants initiation of treatment with both an inhaled corticosteroid and a LABA. Once asthma control is achieved and maintained, assess the patient at regular intervals and step down therapy (e.g., discontinue ADVAIR DISKUS) if possible without loss of asthma control and maintain the patient on a long-term asthma control medication, such as an inhaled corticosteroid. Do not use ADVAIR DISKUS for patients whose asthma is adequately controlled on low- or medium-dose inhaled corticosteroids.</span></li>
+							</ul>
+						</div>
+						<div class="isi-content">
+							<p>CONTRAINDICATIONS</p>
+							<ul>
+								<li><span>ADVAIR DISKUS is contraindicated for primary treatment of status asthmaticus or other acute episodes of asthma or chronic obstructive pulmonary disease (COPD) where intensive measures are required.</span></li>
+								<li><span>ADVAIR DISKUS is contraindicated in patients with severe hypersensitivity to milk proteins.</span></li>
+							</ul>
+							<p>WARNINGS AND PRECAUTIONS</p>
+							<ul>
+								<li><span>ADVAIR DISKUS should not be initiated in patients during rapidly deteriorating or potentially life-threatening episodes of asthma or COPD.</span></li>
+								<li><span>ADVAIR DISKUS should not be used for the relief of acute symptoms, i.e., as rescue therapy for the treatment of acute episodes of bronchospasm. An inhaled, short-acting beta<sub>2</sub>-agonist, not ADVAIR DISKUS, should be used to relieve acute symptoms such as shortness of breath.</span></li>
+								<li><span>ADVAIR DISKUS should not be used more often than recommended, at higher doses than recommended, or in conjunction with other medicines containing LABA, as an overdose may result. Clinically significant cardiovascular effects and fatalities have been reported in association with excessive use of inhaled sympathomimetic drugs. Patients using ADVAIR DISKUS should not use another medicine containing a LABA (e.g., salmeterol, formoterol fumarate, arformoterol tartrate, indacaterol, vilanterol) for any reason.</span></li>
+								<li><span>Oropharyngeal candidiasis has occurred in patients treated with ADVAIR DISKUS. Advise patients to rinse the mouth with water without swallowing following inhalation to help reduce the risk of oropharyngeal candidiasis.</span></li>
+								<li><span>Patients who use corticosteroids are at risk for potential worsening of existing tuberculosis; fungal, bacterial, viral, or parasitic infections; or ocular herpes simplex. A more serious or even fatal course of chickenpox or measles may occur in susceptible patients. Use caution in patients with the above because of the potential for worsening of these infections.</span></li>
+								<li><span>Particular care is needed for patients who have been transferred from systemically active corticosteroids to inhaled corticosteroids because deaths due to adrenal insufficiency have occurred in patients with asthma during and after transfer from systemic corticosteroids to less systemically available inhaled corticosteroids. Slowly taper the dose of systemic corticosteroids if transferring patients to ADVAIR DISKUS.</span></li>
+								<li><span>Hypercorticism and adrenal suppression may occur with high doses of inhaled corticosteroids, including fluticasone propionate, or at the recommended dose in susceptible individuals. If such effects occur, discontinue ADVAIR DISKUS slowly.</span></li>
+								<li><span>The use of strong cytochrome P450 3A4 (CYP3A4) inhibitors (e.g., ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, saquinavir, ketoconazole, telithromycin) with ADVAIR DISKUS is not recommended because increased systemic corticosteroid and increased cardiovascular adverse effects may occur.</span></li>
+								<li><span>If paradoxical bronchospasm occurs, discontinue ADVAIR DISKUS immediately and institute alternative therapy.</span></li>
+								<li><span>Salmeterol, a component of ADVAIR DISKUS, can produce a clinically significant cardiovascular effect in some patients as measured by pulse rate, blood pressure, and/or symptoms. If such effects occur, ADVAIR DISKUS may need to be discontinued. ADVAIR DISKUS should be used with caution in patients with cardiovascular disorders, especially coronary insufficiency, cardiac arrhythmias, and hypertension.</span></li>
+								<li><span>Decreases in bone mineral density (BMD) have been observed with long-term administration of products containing inhaled corticosteroids. Patients with major risk factors for decreased bone mineral content, such as prolonged immobilization, family history of osteoporosis, postmenopausal status, tobacco use, advanced age, poor nutrition, or chronic use of drugs that can reduce bone mass (e.g., anticonvulsants, oral corticosteroids) should be monitored and treated with established standards of care.</span></li>
+								<li><span>Inhaled corticosteroids, as well as poorly controlled asthma, may cause a reduction in growth velocity, and the long-term effect on final adult height is unknown. Patients should be maintained on the lowest dose of inhaled corticosteroid that effectively controls their asthma. Monitor growth of pediatric patients.</span></li>
+								<li><span>Glaucoma, increased intraocular pressure, and cataracts have been reported in patients with asthma and COPD following the long‐term administration of inhaled corticosteroids, including fluticasone propionate, a component of ADVAIR DISKUS. Therefore, close monitoring is warranted in patients with a change in vision or with a history of increased intraocular pressure, glaucoma, and/or cataracts.</span></li>
+								<li><span>Be alert to hypokalemia, hyperglycemia, and systemic eosinophilic conditions, such as Churg-Strauss syndrome.</span></li>
+								<li><span>Use with caution in patients with convulsive disorders, thyrotoxicosis, diabetes mellitus, ketoacidosis, and in patients who are unusually responsive to sympathomimetic amines.</span></li>
+							</ul>
+							<p>ADVERSE REACTIONS</p>
+							<ul>
+								<li><span>Most common adverse reactions (incidence &ge;3%) in subjects with asthma taking ADVAIR DISKUS 100/50, ADVAIR DISKUS 250/50, and placebo, respectively, were upper respiratory tract infection (27%, 21%, 14%), pharyngitis (13%, 10%, 6%), upper respiratory inflammation (7%, 6%, 5%), sinusitis (4%, 5%, 4%), hoarseness/dysphonia (5%, 2%, &lt;1%), oral candidiasis (1%, 4%, 0%), viral respiratory infections (4%, 4%, 3%), bronchitis (2%, 8%, 2%), cough (3%, 6%, 2%), headaches (12%, 13%, 7%), nausea and vomiting (4%, 6%, 1%), gastrointestinal discomfort and pain (4%, 1%, 1%), diarrhea (4%, 2%, 1%), viral gastrointestinal infections (3%, 0%, 2%), candidiasis unspecified site (3%, 0%, 1%), and musculoskeletal pain (4%, 2%, 3%). The types of adverse reactions and events reported were similar in subjects treated with ADVAIR DISKUS 500/50.</span></li>
+							</ul>
+							<p>DRUG INTERACTIONS</p>
+							<ul>
+								<li><span>The use of strong cytochrome P450 3A4 (CYP3A4) inhibitors (e.g., ritonavir, atazanavir, clarithromycin, indinavir, itraconazole, nefazodone, nelfinavir, saquinavir, ketoconazole, telithromycin) with ADVAIR DISKUS is not recommended because increased systemic corticosteroid and increased cardiovascular adverse effects may occur.</span></li>
+								<li><span>ADVAIR DISKUS should be administered with extreme caution to patients being treated with monoamine oxidase inhibitors or tricyclic antidepressants, or within 2 weeks of discontinuation of such agents, because the action of salmeterol, a component of ADVAIR DISKUS, on the vascular system may be potentiated by these agents.</span></li>
+								<li><span>Use beta-blockers with caution as they not only block the pulmonary effect of beta-agonists, such as salmeterol, a component of ADVAIR DISKUS, but may also produce severe bronchospasm in patients with asthma or COPD.</span></li>
+								<li><span>Use ADVAIR DISKUS with caution in patients taking <nobr style="white-space:nowrap;">non&ndash;potassium-</nobr>sparing diuretics (such as loop or thiazide diuretics), as electrocardiographic changes and/or hypokalemia associated with non&ndash; potassium-sparing diuretics may worsen with coadministration with beta-agonists, such as salmeterol.</span></li>
+							</ul>
+							<p>USE IN SPECIFIC POPULATIONS</p>
+							<ul>
+								<li><span>Fluticasone propionate and salmeterol are predominantly cleared by hepatic metabolism. Impairment of liver function may lead to accumulation of fluticasone propionate and salmeterol in plasma. Therefore, patients with hepatic disease should be closely monitored.</span></li>
+							</ul>
+							<p>Please see full Prescribing Information, including Boxed Warning, for ADVAIR DISKUS.</p>
+							<p>Reference: 1. <span class="normal-weight">IMS Health NPA. US TRx Data. Danbury, CT; June 2014-May 2015.</span></p>																
+							<p><span class="normal-weight">&copy;2015 GSK group of companies. All rights reserved. Produced in USA. 000000R0 October 2015</span></p>
+						</div>
+					</div>
+				</div>
+				<div id="cta-info" class="cta">
+					<div class="cta-inner">
+						PRESCRIBING INFORMATION
+					</div>
+				</div>
+				<div id="cta-guide" class="cta">
+					<div class="cta-inner">MEDICATION GUIDE</div>
+				</div>
+
+			</div>
+		</div>
+		<script>
+			var container = document.getElementById('gsk_container_dc');
+
+			init = function() {				
+				container.style.display = "block";	
+
+				//begincontrols	
+				var tl = new TimelineLite();
+
+				tl
+				// f1 in
+				.set('#state-graphic', {scale: 0.1})
+				.to('#state-graphic', 0.5, {opacity: 1})
+				.to('#state-graphic', 1.5, {scale: 1}, '-=0.5')
+				.to('#f1-copyA', 0.5, {opacity: 1, x: -160}, '-=1.5')
+				.to('#f1-copyB', 0.5, {opacity: 1, x: -160}, '-=1.4')
+				// f1 out
+				.to('#state-graphic', 0.5, {opacity: 0}, '+=2.5')
+				.to('#logo', 0.5, {opacity: 0}, '-=0.5')
+				.to('#f1-copyA', 0.5, {opacity: 1, x: -330}, '-=0.5')
+				.to('#f1-copyB', 0.5, {opacity: 1, x: -330}, '-=0.4')
+				// f2 in
+				.to('#product-name', 0.5, {y: 59})
+				.to('#isi', 0.5, {y: -250}, '-=0.5')
+				.to('#cta-info', 0.5, {y: -53})
+				.to('#cta-guide', 0.5, {y: -25}, '-=0.25')
+				.to('#f2-copy', 0.5, {x: -160, opacity: 1}, '-=0.75')
+				// f2 out
+				.set('#f3-copy', {x: -161})
+				.to('#product-name', 0.5, {y: 0}, '+=3')
+				.to('#f2-copy', 0.5, {x: -340, opacity: 0}, '-=0.5')
+				// f3 in
+				.to('#f3-copy', 1, {y: -350, ease: Power2.easeOut}, '-=0.2')
+				// f3 out *** SET DURATION ONCE COPY IS FINALIZED
+				.to('#f3-copy', 0.5, {opacity: 0}, '+=8')
+				// f4 in
+				.set('#bg-image', {scale: 0.7})
+				.to('#product-name', 0.5, {y: 59})
+				.to('#bg-image', 0.5, {opacity: 1}, '-=0.5')
+				.to('#f4-copyA', 0.5, {opacity: 1, x: 160}, '-=0.5')
+				.to('#f4-copyB', 0.5, {opacity: 1, x: 160}, '-=0.4')
+				// f4 out
+				.set('#cta-req', {x: -160})
+				.to('#bg-image', 3, {scale: 1, x: -17, y: -57, ease: Power2.easeInOut}, '+=1')
+				.to('#f4-copyA', 0.5, {opacity: 0, x: 340}, '-=1.5')
+				.to('#f4-copyB', 0.5, {opacity: 0, x: 340}, '-=1.4')
+				// f5 in
+				.to('#f5-copyA', 0.5, {opacity: 1, x: 160}, '-=1')
+				.to('#f5-copyB', 0.5, {opacity: 1, x: 160}, '-=0.9')
+				.to('#cta-req', 0.5, {y: -40}, '-=0.2')
+				;
+				//endcontrols
+			}
+		</script>
+	</body>
+</html>

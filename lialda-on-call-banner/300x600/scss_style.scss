@@ -1,0 +1,400 @@
+$bannerWidth: 300px;
+$bannerHeight: 600px;
+$bgColor: #fff;
+$accentColor:#01aba7;
+$borderColor: #BEBEBE;
+$expandTimer: 250ms;
+
+@mixin transform($value) {
+	-webkit-transform: #{$value};
+	-ms-transform: $value;
+	transform: $value;
+}
+
+@mixin animation($value) {
+	-webkit-animation: $value;
+	animation: $value;
+}
+
+@mixin transform-origin($x,$y) {
+	-webkit-transform-origin: $x $y;
+	-ms-transform-origin: $x $y;
+	transform-origin: $x $y;
+}
+
+@mixin keyframes ($animation-name) {
+	@-webkit-keyframes #{$animation-name}{
+		@content;
+	}
+	@-moz-keyframes #{$animation-name}{
+		@content;
+	}
+	@-o-keyframes #{$animation-name}{
+		@content;
+	}
+	@keyframes #{$animation-name}{
+		@content;
+	}
+}
+		
+@mixin frames($frameMap){
+	@each $frame in map-keys($frameMap){
+		##{$frame}{
+			@include animation(map-get($frameMap, $frame));
+		}
+	}
+}
+body{
+	margin:0;
+}
+
+#bg-exit {
+	position:relative;
+	width:$bannerWidth - 2px;
+	height:$bannerHeight - 2px;
+	border:#000 1px solid;
+	background-color:$bgColor;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	cursor:pointer;
+	overflow:hidden;
+	
+	.frame, .bg {
+		position:absolute;
+		top:-1px;
+		left:-1px;
+		//width:100%;
+		//height:100%;
+		@include transform-origin(50%,42.5%);
+	}
+	
+		/* initialize all frames as hidden */
+	.frame {
+		opacity: 0;
+		z-index: 1;
+	}
+	
+		// touch-up specific frame heights because bad assets are very, very real
+		/*#f4 {
+			top:2px;
+		}*/
+	
+	.bg {
+		z-index: 0;
+	}
+	
+	.dot{
+		position: absolute;
+		width: 34px;
+		height: 34px;
+		background-color: #ccd642;
+		border-radius: 50%;
+		opacity:0;
+		z-index:2;
+	}
+	
+	#indication {
+		opacity:1;
+		z-index: 3;
+	}
+	#f1{
+	  position:absolute;
+	  top:215px;
+	  left:25px
+	}
+	#f2{
+  position:absolute;
+  top:260px;
+  left:20px
+}
+#f3{
+  position:absolute;
+  top:260px;
+  left:40px
+}
+#f4{
+  position:absolute;
+  top:260px;
+  left:0px
+}
+#f5{
+  position:absolute;
+  left:50px;
+  top:215px;
+}
+ #f51{
+  position:absolute;
+  left:20px;
+  top:230px;
+}
+	#pi{
+	  position:absolute;
+	  height:10px;
+	  width:150px;
+	  top:370px;
+	  left:72px;
+	  //background-color:#000;
+	  z-index:3;
+	}
+	#oncall{
+ left:50px;
+ top:230px;
+}
+
+	#default {
+		display:none;
+	}
+	
+	#learn_more {
+		position:absolute;
+		overflow:hidden;
+		top:310px;
+		//left:6px;
+		left:90px;
+		z-index:3;
+		
+		width:145px;
+		height:35px;
+	
+		opacity:0;
+	}
+	
+	#overlay-end{
+	  position:absolute;
+	  overflow:hidden;
+	  width: 0;
+	  height: 0;
+	  border-top: 125px solid transparent;
+	  border-left: 125px solid white;
+	  border-bottom: 125px solid transparent;
+	  top:-108px;
+	  left:-105px;
+	  z-index:4;
+	  opacity:0.5;
+	}
+
+	/*#learn_more:hover {
+		@include transform(scale(1.04));
+	}*/
+	
+	#isi-container {
+		position:absolute;
+		opacity:0;
+		bottom:0;
+		right:0;
+		height:200px;
+		//height:95px;
+		width:100%;
+		z-index:4;
+		background-color:$bgColor;
+		
+			/* handle resizing */
+		transition: height $expandTimer;
+		
+		> div {
+			padding:0 0 0 5px;
+			transition: height $expandTimer;
+		}
+		
+		#isi-header {
+			border:none;
+			height: 38px;
+			
+			a {
+cursor:pointer;
+			  font-family: Arial;
+				position: absolute;
+				top: 2px;
+				left: 15px;
+				color: $accentColor;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 14px;
+				letter-spacing: -0.25px;
+			}
+			
+			#isi-expand {
+				position: absolute;
+				top: 26px;
+				right: 0px;
+				
+				width:10px;
+				height:10px;
+				
+				display:block;
+				float:right;				
+				opacity:1;
+				
+				border: #e4e5e5 1px solid;
+				
+				transition:opacity $expandTimer;
+			}
+			
+			#isi-collapse {
+				@extend #isi-expand;
+				display:none;
+				opacity:0;
+				transition:opacity $expandTimer;
+			}
+		}
+	
+		#legal {
+			font-family: Arial,sans-serif;
+			position:absolute;
+			font-weight:400;
+			bottom:0;
+			left:0;
+			width:100%;
+			height:162px;
+			color:#222;
+			padding:0;
+			overflow-x: hidden;
+			//overflow-y: hidden;
+			overflow-y: auto;
+			cursor:default;
+			
+			font-size:12px;
+			line-height: 15px;
+			letter-spacing: 0.15px;
+			
+			p {
+				margin:0 10px 0 15px;
+			}
+			
+			p.standalone {
+				margin-top:10px;
+				letter-spacing:-0.5px;
+			}
+			
+			h5 {
+			  color: $accentColor;
+				//color:#18a89e;
+				font-size:13px;
+				margin: 3px 0 0 15px;
+				font-weight:bold;
+				font-family:"Open Sans", Arial, sans-serif;
+				
+				a{
+					color: #20BFB4;
+					//color:#18a89e;
+					text-decoration:underline;
+				}
+			}
+			
+			ul {
+				padding-left: 10px;
+				margin: 0 14px 10px 5px;
+				list-style:none;
+				
+				&.spacious li:not(:first-of-type) {
+					padding-top:14px;
+				}
+			}
+			
+			li {
+				padding:0 0 0 5px;
+				text-indent:-9px;
+				margin:0 0 0 17px;
+				
+				&:before {
+					content:'\2022';
+					font-size: 14px;
+					vertical-align: -1px;
+					padding-right:4px;
+				}
+			}
+			
+			ul:not(:first-of-type) li {
+				padding-bottom:10px;
+			}
+			
+			ul.columns {
+				-moz-column-count: 2;
+				-moz-column-gap: 10px;
+				-webkit-column-count: 2;
+				-webkit-column-gap: 10px;
+				column-count: 2;
+				column-gap: 10px;
+				
+				li {
+					padding:0 0 0 8px;
+				}
+			}
+			
+			sup {
+				font-size: 75%;
+				line-height: 0;
+			}
+			
+			.strong {
+				font-weight:bold;
+			}
+			
+			.alert {
+				color:#20BFB4;
+			}
+				
+			a {
+cursor:pointer;
+				color:#20BFB4;
+				text-decoration:underline;
+			}
+			
+			#shire-logo {
+				width:129.5px;
+				display:block;
+			}
+		}
+		
+		#scrollbar-container {
+			position:relative;
+			bottom: 0;
+			right: -1px;
+			width:14px;
+			height:180px;
+			//  height:80px;
+			float:right;
+			display:block;
+			padding:0 !important;
+			z-index:1;
+			
+			opacity:1;
+			transition:opacity $expandTimer;
+		}
+	}
+	
+	&.expanded {
+	
+		.frame{
+			z-index:-2;
+		}
+	
+		#isi-container{
+			height:100%;
+			border-left: $borderColor 1px solid;
+	
+			#isi-header {
+				border-top:$borderColor 1px solid;
+		
+				#isi-expand {
+					display:none;
+					opacity:0;
+				}
+		
+				#isi-collapse {
+					display:block;
+					opacity:1;
+				}
+			}
+			
+			#scrollbar-container {
+				display:none;
+				opacity:0;
+			}
+			
+			#legal {
+				height: 560px;
+				overflow-y: auto;
+			}
+		}
+	}
+}

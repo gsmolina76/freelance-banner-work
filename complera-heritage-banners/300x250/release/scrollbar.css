@@ -1,0 +1,55 @@
+/*Custom scrollbars */
+
+#legal::-webkit-scrollbar {
+	position:absolute;
+	top:150px;
+  	width:14px;
+  	cursor:auto;
+} 
+
+#legal::-webkit-scrollbar-track {
+	/*box-shadow: 3px 3px 10px rgba(0,0,0,.25) inset;*/
+	
+	background-image:url(scroll-bg.png);
+	background-position:0 0;
+	background-repeat:repeat-y;
+}
+
+legal::-webkit-scrollbar-button{
+} 
+
+#legal::-webkit-scrollbar-button:start:decrement {
+    display: none;
+    
+}
+#legal::-webkit-scrollbar-button:start:increment {
+    display: none;
+    
+}
+/*#legal::-webkit-scrollbar-button:end:increment {
+    display: none;
+}*/
+
+#legal::-webkit-scrollbar-button:vertical:decrement{ 
+  /* using CSS Sprite for bar image */
+  position:absolute;
+  bottom:100px;
+  height:14px;
+  width:14px;
+  
+  background-image: url("scroll-arrows.png");
+  background-position: 0px 0px;
+  background-repeat:no-repeat;
+}
+
+#legal::-webkit-scrollbar-button:vertical:increment{
+position:absolute;
+  /* using CSS Sprite for bar image */
+  top:50px;
+  height:14px;
+  width:14px;
+  
+  background-image: url("scroll-arrows.png");
+  background-position: 0px -13px;
+  background-repeat:no-repeat;
+}

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 403.947 376.528" style="enable-background:new 0 0 403.947 376.528;" xml:space="preserve">
+<symbol  id="_x31_60_x5F_border" viewBox="-16383 -16383 32766 32766">
+	<polygon style="display:none;fill:none;" points="16383,-16383 -16383,-16383 -16383,16383 16383,16383 	"/>
+</symbol>
+<g id="A1">
+	<g id="Layer_2">
+		
+			<use xlink:href="#_x31_60_x5F_border"  width="32766" height="32766" id="XMLID_1_" x="-16383" y="-16383" transform="matrix(1.8634 0 0 -0.416 -1495.9515 -448.6803)" style="overflow:visible;"/>
+	</g>
+</g>
+<g id="A2">
+	<g id="Layer_2_copy">
+		
+			<use xlink:href="#_x31_60_x5F_border"  width="32766" height="32766" id="XMLID_2_" x="-16383" y="-16383" transform="matrix(1.8634 0 0 -0.416 -1495.9515 -448.6803)" style="overflow:visible;"/>
+	</g>
+</g>
+<g id="A3">
+	<defs>
+		<rect id="SVGID_2026_" x="-968.386" y="-569.472" width="300" height="250"/>
+	</defs>
+	<clipPath id="SVGID_4_">
+		<use xlink:href="#SVGID_2026_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Layer_2_copy_2" style="clip-path:url(#SVGID_4_);">
+		
+			<use xlink:href="#_x31_60_x5F_border"  width="32766" height="32766" id="XMLID_3_" x="-16383" y="-16383" transform="matrix(1.8634 0 0 -0.416 -1495.9515 -448.6803)" style="overflow:visible;"/>
+	</g>
+</g>
+<g id="A4">
+	<defs>
+		<rect id="SVGID_2028_" x="-628.386" y="-570.472" width="300" height="250"/>
+	</defs>
+	<clipPath id="SVGID_5_">
+		<use xlink:href="#SVGID_2028_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="Layer_2_copy_3" style="clip-path:url(#SVGID_5_);">
+		
+			<use xlink:href="#_x31_60_x5F_border"  width="32766" height="32766" id="XMLID_4_" x="-16383" y="-16383" transform="matrix(1.8634 0 0 -0.416 -1495.9515 -448.6803)" style="overflow:visible;"/>
+	</g>
+</g>
+<g id="A5">
+</g>
+<g id="A6">
+</g>
+<g id="A7">
+</g>
+<g id="A8">
+</g>
+<g id="Layer_13">
+	<g>
+		<defs>
+			<rect id="SVGID_2105_" x="37.947" y="0" width="300" height="250"/>
+		</defs>
+		<clipPath id="SVGID_7_">
+			<use xlink:href="#SVGID_2105_"  style="overflow:visible;"/>
+		</clipPath>
+		<g style="opacity:0.66;clip-path:url(#SVGID_7_);">
+			<defs>
+				<path id="SVGID_2107_" style="opacity:0.66;" d="M369.854,253H188.165H6.476V151.585V72.098l9.86-1.802
+					c109.949-20.093,233.708-20.093,343.656,0l9.86,1.802v79.487V253z"/>
+			</defs>
+			<use xlink:href="#SVGID_2107_"  style="overflow:visible;fill:#FFFFFF;"/>
+			<clipPath id="SVGID_9_">
+				<use xlink:href="#SVGID_2107_"  style="overflow:visible;"/>
+			</clipPath>
+			<rect x="0" y="51.072" style="clip-path:url(#SVGID_9_);fill:#FFFFFF;" width="403.947" height="128.333"/>
+		</g>
+		<g style="clip-path:url(#SVGID_7_);">
+			<defs>
+				<path id="SVGID_2109_" d="M349.164,376.528H188.177H27.19V162.899V77.205l8.737-1.943c97.421-21.662,207.079-21.662,304.5,0
+					l8.737,1.943v85.694V376.528z"/>
+			</defs>
+			<clipPath id="SVGID_11_">
+				<use xlink:href="#SVGID_2109_"  style="overflow:visible;"/>
+			</clipPath>
+			
+				<linearGradient id="SVGID_13_" gradientUnits="userSpaceOnUse" x1="1122.114" y1="-307.4517" x2="1312.6379" y2="-307.4517" gradientTransform="matrix(4.489700e-11 1 -1 4.489700e-11 -125.8306 -1081.114)">
+				<stop  offset="0" style="stop-color:#FFE8BA"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</linearGradient>
+			<rect x="12" y="41" style="clip-path:url(#SVGID_11_);fill:url(#SVGID_13_);" width="339.242" height="190.524"/>
+			
+				<linearGradient id="SVGID_15_" gradientUnits="userSpaceOnUse" x1="-261.3643" y1="-747.6152" x2="-168.8404" y2="-747.6152" gradientTransform="matrix(-4.489700e-11 -1 1 -4.489700e-11 940.4673 -102.3643)">
+				<stop  offset="0" style="stop-color:#A3D9F5"/>
+				<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			</linearGradient>
+			<rect x="23.231" y="66.476" style="clip-path:url(#SVGID_11_);fill:url(#SVGID_15_);" width="339.242" height="92.524"/>
+		</g>
+	</g>
+</g>
+</svg>
